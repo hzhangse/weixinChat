@@ -29,7 +29,14 @@ public class ReceiveXmlEntity {
 	private String Content="";
 	private String Format="";
 	private String Recognition="";
+	private String Encrypt="";
 	
+	public String getEncrypt() {
+		return Encrypt;
+	}
+	public void setEncrypt(String encrypt) {
+		Encrypt = encrypt;
+	}
 	public String getRecognition() {
 		return Recognition;
 	}
