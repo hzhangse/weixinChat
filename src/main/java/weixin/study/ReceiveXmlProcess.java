@@ -38,7 +38,8 @@ public class ReceiveXmlProcess {
 			msg = new ReceiveXmlEntity();
 			//利用反射机制，调用set方法
 			//获取该实体的元类型
-			Class<?> c = Class.forName("weixin.study.ReceiveXmlEntity");
+			String className = ReceiveXmlEntity.class.getName();
+			Class<?> c = Class.forName(className);
 			msg = (ReceiveXmlEntity)c.newInstance();//创建这个实体的对象
 			
 			while(iter.hasNext()){
